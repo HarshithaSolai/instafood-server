@@ -3,7 +3,9 @@
   "version": "1.0.0",
   "description": "A node.js web server that fetches data from a third-party (Swiggy) API and exposes it to a client (instafood) app via an HTTP endpoint.\"",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js",
+    "build" : "npm run build"
   },
   "repository": {
     "type": "git",
