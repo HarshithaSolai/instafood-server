@@ -37,7 +37,19 @@ For fetching menu items for restaurant, you can use the fetch API in React to ma
 
 This will retrieve the data from the Swiggy API via your Node.js server and allow you to use it in your React app.
 
+### Building Node Server 
+14. Install bundler : I am using parcel for building the node server 
+`npm install parcel-bundler --save-dev`
+15. Now, create a new script in your package.json file that uses Parcel to bundle your server code.
+```
+"scripts": {
+  "build": "parcel build src/server.js --target node --out-dir dist"
+}
+```
+16. 
 ### Deploying Node Server 
+
+
 
 14. Create a Vercel account at https://vercel.com/signup
 15. Log in to your Vercel account and click on the "Import Project" button.

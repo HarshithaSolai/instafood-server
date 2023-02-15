@@ -5,7 +5,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node server.js",
-    "build" : "npm run build"
+    "build": "parcel build server.js --target node --out-dir dist"
   },
   "repository": {
     "type": "git",
@@ -21,5 +21,8 @@
     "cors": "^2.8.5",
     "cross-fetch": "^3.1.5",
     "express": "^4.18.2"
+  },
+  "devDependencies": {
+    "parcel-bundler": "^1.12.5"
   }
 }
