@@ -1,5 +1,5 @@
 # Instafood Web Server 
-A simple node.js web server that fetches data from a third-party (Swiggy) API and exposes it to a client (instafood) app."
+A simple node.js web server that fetches data from a third-party (Swiggy) API and exposes it to a client (instafood) app.
 
 ## Table of contents:
 - [API Endpoints](#api-endpoints)
@@ -17,8 +17,9 @@ A simple node.js web server that fetches data from a third-party (Swiggy) API an
 
 - Query Parameters:
 
-`lat (required)` : latitude of the location to search for restaurants
-`lng (required)` : longitude of the location to search for restaurants
+  `lat (required)` : latitude of the location to search for restaurants
+
+  `lng (required)` : longitude of the location to search for restaurants
 
 - Response Format: `JSON`
 
@@ -55,14 +56,16 @@ const data = await response.json();
 
 - Query Parameters:
 
-`lat` (required) : latitude of the location to search for restaurants
-`lng`(required) : longitude of the location to search for restaurants
-`menuId` (required): ID of the restaurant's menu
+  `lat` (required) : latitude of the location to search for restaurants.
+
+  `lng`(required) : longitude of the location to search for restaurants.
+
+  `menuId` (required): ID of the restaurant's menu.
 
 
 - Response Format: `JSON`
 
-URL: `https://instafood.onrender.com/api/restaurants?lat=:latquery&lng=:lngquery&menuId=:menuId`
+- URL: `https://instafood.onrender.com/api/restaurants?lat=:latquery&lng=:lngquery&menuId=:menuId`
 
 - Example Request:
 
@@ -85,7 +88,7 @@ const data = await response.json();
 
 ```
 
-### Clone this Repository
+### Clone Repository
 You need to write the following commands on the terminal screen (in vscode) so that you can run this project locally.
 
 ```bash
