@@ -64,7 +64,7 @@ app.get('/api/menu', (req, res) => {
 });
 
 app.get('/', (req, res) =>{
-  res.json({"hi":"hello"});
+  res.json({"test":"hello instafood lovers !!! "});
 })
 app.listen(port, () => {
   console.log(`Server is listening on port ${port}`);
