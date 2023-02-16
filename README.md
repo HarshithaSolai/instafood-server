@@ -108,7 +108,7 @@ Start the server
   npm start
 ```
 
-This application should now be running on `localhost`.
+This server should now be running on `localhost`.
 
 ### Deploy your own server
 
