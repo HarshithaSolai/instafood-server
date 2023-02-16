@@ -23,7 +23,7 @@ A simple node.js web server that fetches data from a third-party (Swiggy) API an
 
 - Response Format: `JSON`
 
-URL: `https://instafood.onrender.com/api/restaurants?lat=:latquery&lng=:lngquery`
+- URL: `https://instafood.onrender.com/api/restaurants?lat=:latquery&lng=:lngquery`
 
 - Example Request:
 
