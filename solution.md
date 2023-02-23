@@ -23,7 +23,7 @@ Browser extensions can be used as a `quick` fix for CORS issues in situations wh
 
 This solution will only work for the particular browser where the extension is installed, and will not affect requests made from other browsers or applications. It is important to note that using a browser extension to fix CORS issues is not a recommended long-term solution. It is always best to address CORS issues at the server level by properly configuring the CORS headers and allowing requests from trusted domains.
 
-### CORS proxy services : 
+### 2. CORS proxy services : 
 
 There are several CORS proxy services available that act as middleman between the client and the server, adding the necessary CORS headers to the request.
 
@@ -31,7 +31,7 @@ There are several CORS proxy services available that act as middleman between th
 
 Note that using a third-party CORS proxy like CORS Anywhere is not recommended for production use, as it can potentially expose our API key and other sensitive information to the proxy server. It is better to set up our own server and handle CORS headers ourself.
 
-### Server-Side/Backend Proxy :
+### 3. Server-Side/Backend Proxy :
 
 This the solution that we will be using to fix the CORS restriction. It is simliar to CORS proxy service mentioned above, we will be created our own server/service instead of using the third-party service. 
 
@@ -177,7 +177,7 @@ const response =  await fetch(`http://localhost:3000/api/restaurants?lat=12.9351
 const data = await response.json();
 ```
 
-## Step : Deploy the server
+## Step 5: Deploy the server
 
 Once you have tested our server locally, you can deploy it to a production environment.
 
