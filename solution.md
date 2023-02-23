@@ -1,6 +1,6 @@
 # Resolving CORS Restriction using Node.js: A Guide for Working with Third-Party APIs
 
-As front-end developers, we may have encountered the CORS (Cross-Origin Resource Sharing) issue when trying to access an API from a different domain. This issue arises when the browser blocks requests made from a different domain, preventing our application from accessing the data we need. However, there is a lot of fixes/solutions to this problem, and we will look into one of the easiest yet efficient solution. It involves using Node.js to create a backend proxy server can be used to bypass CORS restrictions by forwarding the client's request to a server that is not subject to the same origin policy. 
+As front-end developers, we may have encountered the CORS (Cross-Origin Resource Sharing) issue when trying to access an API from a different domain. This issue arises when the browser blocks requests made from a different domain, preventing our application from accessing the data we need. However, there is a lot of fixes/solutions to this problem, and we will look into one of the easiest yet efficient solution. It involves using Node.js to create a backend proxy server, which can be used to bypass CORS restrictions by forwarding the client's request to a server that is not subject to the same origin policy. 
 
 
 In this document, we will see how to use Node.js to create a server that can make API requests without being blocked by CORS restrictions. 
