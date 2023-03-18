@@ -36,9 +36,15 @@ app.get('/api/restaurants', (req, res) => {
 });
 
 app.get('/api/menu', (req, res) => {
-  const { lat, lng, menuId } = req.query;
+  const { lat, lng, restaurantId } = req.query;
   console.log(req.query);
+
+  /* OLD SWIGGY API
   const url = `https://www.swiggy.com/dapi/menu/v4/full?lat=${lat}&lng=${lng}&menuId=${menuId}`;
+  */ 
+
+  const url = `https://www.swiggy.com/dapi/menu/pl?page-type=REGULAR_MENU&complete-menu=true&lat=${lat}&lng=${lng}&submitAction=ENTER&restaurantId=${restaurantId}`;
+
 
   fetch(url, {
     headers: {
@@ -62,6 +68,10 @@ app.get('/api/menu', (req, res) => {
       res.status(500).send('An error occurred');
     });
 });
+
+
+
+
 
 app.get('/', (req, res) =>{
   res.json({"test":"hello instafood lovers !!! "});
