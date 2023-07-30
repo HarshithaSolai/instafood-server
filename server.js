@@ -27,6 +27,7 @@ app.get('/api/restaurants', (req, res) => {
       return response.json();
     })
     .then(data => {
+      console.log(data);
       res.json(data);
     })
     .catch(error => {
